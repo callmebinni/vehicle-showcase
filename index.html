@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Futuristic Vehicle Showcase</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* INTERNAL CSS */
+
+body{
+background:#020617;
+text-align:center;
+font-family:Arial;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+width:260px;
+margin:20px;
+padding:15px;
+border-radius:12px;
+background:#0f172a;
+box-shadow:0 0 15px #00f7ff;
+transition:0.4s;
+}
+
+.card:hover{
+transform:scale(1.08) rotateY(5deg);
+box-shadow:0 0 30px #00f7ff;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 id="mainTitle">⚡ FUTURE VEHICLE SHOWCASE ⚡</h1>
+<h2 class="subtitle">Technology • Speed • Innovation</h2>
+
+<p>Welcome to the futuristic vehicle gallery where technology meets speed.</p>
+<p>This website demonstrates advanced styling techniques using HTML CSS and JavaScript.</p>
+
+<h3>Featured Vehicle Collection</h3>
+
+<div class="gallery">
+
+<div class="card">
+
+<h4>Electric Hypercar</h4>
+
+<img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg">
+
+<p>Electric hypercars deliver incredible acceleration and zero emissions.</p>
+
+</div>
+
+<div class="card">
+
+<h4>Luxury SUV</h4>
+
+<img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg">
+
+<p>Luxury SUVs combine comfort with powerful performance.</p>
+
+</div>
+
+<div class="card">
+
+<h4>Sports Coupe</h4>
+
+<img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg">
+
+<p>Sports coupes focus on aerodynamics and precision handling.</p>
+
+</div>
+
+<div class="card">
+
+<h4>Off Road Beast</h4>
+
+<img src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg">
+
+<p>Off road vehicles conquer extreme terrains and environments.</p>
+
+</div>
+
+<div class="card">
+
+<h4>Concept Future Car</h4>
+
+<img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg">
+
+<p>Concept cars explore futuristic technology and design ideas.</p>
+
+</div>
+
+</div>
+
+<p>The automobile industry continues to evolve with autonomous technology.</p>
+<p>The next generation of vehicles will redefine mobility and performance.</p>
+
+<button onclick="activateMode()" 
+style="padding:12px 20px;background:#ff0033;color:white;border:none;border-radius:6px;font-size:16px;">
+Activate Hyper Mode
+</button>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
