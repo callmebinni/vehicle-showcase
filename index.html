@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
 <meta charset="UTF-8">
@@ -15,7 +14,6 @@
 /* INTERNAL CSS */
 
 body{
-background:#020617;
 text-align:center;
 font-family:Arial;
 }
@@ -33,12 +31,7 @@ padding:15px;
 border-radius:12px;
 background:#0f172a;
 box-shadow:0 0 15px #00f7ff;
-transition:0.4s;
-}
-
-.card:hover{
-transform:scale(1.08) rotateY(5deg);
-box-shadow:0 0 30px #00f7ff;
+transition:0.3s;
 }
 
 .card img{
@@ -52,13 +45,17 @@ border-radius:10px;
 
 <body>
 
-<h1 id="mainTitle">⚡ FUTURE VEHICLE SHOWCASE ⚡</h1>
+<div id="particles-js"></div>
+
+<h1 id="mainTitle">Future Vehicle Showcase</h1>
 <h2 class="subtitle">Technology • Speed • Innovation</h2>
 
-<p>Welcome to the futuristic vehicle gallery where technology meets speed.</p>
-<p>This website demonstrates advanced styling techniques using HTML CSS and JavaScript.</p>
+<p>Welcome to the futuristic vehicle gallery where modern engineering meets innovative design.</p>
+<p>This website demonstrates HTML CSS and JavaScript working together to create interactive experiences.</p>
 
-<h3>Featured Vehicle Collection</h3>
+<input type="text" id="searchBar" placeholder="Search vehicles..." onkeyup="searchVehicle()">
+
+<h3>Featured Vehicles</h3>
 
 <div class="gallery">
 
@@ -68,7 +65,7 @@ border-radius:10px;
 
 <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg">
 
-<p>Electric hypercars deliver incredible acceleration and zero emissions.</p>
+<p>Electric hypercars deliver extreme speed with zero emissions.</p>
 
 </div>
 
@@ -78,7 +75,7 @@ border-radius:10px;
 
 <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg">
 
-<p>Luxury SUVs combine comfort with powerful performance.</p>
+<p>Luxury SUVs focus on comfort safety and premium technology.</p>
 
 </div>
 
@@ -88,7 +85,7 @@ border-radius:10px;
 
 <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg">
 
-<p>Sports coupes focus on aerodynamics and precision handling.</p>
+<p>Sports coupes emphasize aerodynamics performance and style.</p>
 
 </div>
 
@@ -98,7 +95,7 @@ border-radius:10px;
 
 <img src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg">
 
-<p>Off road vehicles conquer extreme terrains and environments.</p>
+<p>Off road vehicles conquer mountains deserts and harsh terrain.</p>
 
 </div>
 
@@ -108,22 +105,46 @@ border-radius:10px;
 
 <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg">
 
-<p>Concept cars explore futuristic technology and design ideas.</p>
+<p>Concept cars explore the future of transportation and technology.</p>
 
 </div>
 
 </div>
 
-<p>The automobile industry continues to evolve with autonomous technology.</p>
-<p>The next generation of vehicles will redefine mobility and performance.</p>
+<p>The automotive industry continues to evolve with electric vehicles and smart technology.</p>
+<p>Future vehicles will combine sustainability intelligence and powerful performance.</p>
 
-<button onclick="activateMode()" 
-style="padding:12px 20px;background:#ff0033;color:white;border:none;border-radius:6px;font-size:16px;">
-Activate Hyper Mode
-</button>
+<h3>Vehicle Image Gallery</h3>
+
+<div class="slider">
+
+<img id="slideImage"
+src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg">
+
+<br>
+
+<button onclick="prevSlide()" style="padding:10px;">Prev</button>
+<button onclick="nextSlide()" style="padding:10px;">Next</button>
+
+</div>
+
+<h3>AI Car Recommendation</h3>
+
+<select id="carType">
+
+<option value="speed">Speed</option>
+<option value="luxury">Luxury</option>
+<option value="offroad">Off Road</option>
+
+</select>
+
+<button onclick="recommendCar()" style="padding:10px;background:red;color:white;">Recommend</button>
+
+<p id="recommendation"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
