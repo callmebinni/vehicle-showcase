@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Futuristic Vehicle Showcase</title>
+
+<!-- Link to external CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<h1 id="mainTitle">Future Vehicle Showcase</h1>
+<h2 class="subtitle">Technology • Speed • Innovation</h2>
+
+<p class="intro">Welcome to the futuristic vehicle gallery where modern engineering meets innovative design.</p>
+<p class="intro">This website demonstrates HTML, CSS, and JavaScript working together to create interactive experiences.</p>
+
+<input type="text" id="searchBar" placeholder="Search vehicles..." onkeyup="searchVehicle()">
+
+<h3 class="section-title">Featured Vehicles</h3>
+
+<div class="gallery">
+
+    <div class="card">
+        <h4 class="vehicle-title">Electric Hypercar</h4>
+        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Electric Hypercar">
+        <p class="vehicle-desc">Electric hypercars deliver extreme speed with zero emissions.</p>
+    </div>
+
+    <div class="card">
+        <h4 class="vehicle-title">Luxury SUV</h4>
+        <img src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" alt="Luxury SUV">
+        <p class="vehicle-desc">Luxury SUVs focus on comfort, safety, and premium technology.</p>
+    </div>
+
+    <div class="card">
+        <h4 class="vehicle-title">Sports Coupe</h4>
+        <img src="https://images.pexels.com/photos/210019/pexels-photo-210019.jpeg" alt="Sports Coupe">
+        <p class="vehicle-desc">Sports coupes emphasize aerodynamics, performance, and style.</p>
+    </div>
+
+    <div class="card">
+        <h4 class="vehicle-title">Off Road Beast</h4>
+        <img src="https://images.pexels.com/photos/1119796/pexels-photo-1119796.jpeg" alt="Off Road Beast">
+        <p class="vehicle-desc">Off road vehicles conquer mountains, deserts, and harsh terrain.</p>
+    </div>
+
+    <div class="card">
+        <h4 class="vehicle-title">Concept Future Car</h4>
+        <img src="https://images.pexels.com/photos/1149137/pexels-photo-1149137.jpeg" alt="Concept Future Car">
+        <p class="vehicle-desc">Concept cars explore the future of transportation and technology.</p>
+    </div>
+
+</div>
+
+<p class="conclusion">The automotive industry continues to evolve with electric vehicles and smart technology.</p>
+<p class="conclusion">Future vehicles will combine sustainability, intelligence, and powerful performance.</p>
+
+<h3 class="section-title">Vehicle Image Gallery</h3>
+
+<div class="slider">
+    <img id="slideImage" src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" alt="Slide Image">
+    <br>
+    <button onclick="prevSlide()">Prev</button>
+    <button onclick="nextSlide()">Next</button>
+</div>
+
+<h3 class="section-title">AI Car Recommendation</h3>
+
+<select id="carType">
+    <option value="speed">Speed</option>
+    <option value="luxury">Luxury</option>
+    <option value="offroad">Off Road</option>
+</select>
+
+<button onclick="recommendCar()">Recommend</button>
+
+<p id="recommendation"></p>
+
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
